@@ -4,13 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "next build",
+    "build": "node api.js && next build",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
-    "dev": "next dev",
+    "dev": "node api.js && next dev",
     "postinstall": "prisma generate",
     "lint": "next lint",
-    "start": "next start",
+    "start": "node api.js && next start",
     "backup": "node ./scripts/backup.js",
     "restore": "node ./scripts/restore.js"
   },
